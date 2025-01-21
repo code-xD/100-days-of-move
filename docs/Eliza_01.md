@@ -62,11 +62,6 @@ The Eliza framework is a modern, open-source platform designed to facilitate the
    - **Community Engagement**: They interact with users on social platforms, sharing analyses and educational content.
    - **Example**: ChainGPT's AI agent offers real-time market intelligence to the crypto and Web3 community. 
 
-8. **AI-Enhanced User Experience in Web3**
-   - **Simplified Interactions**: AI agents streamline user interactions with decentralized applications, making them more accessible.
-   - **Automated Workflows**: They automate complex processes, reducing the learning curve for new users.
-   - **Example**: Biconomy's AI agents transform the Web3 user experience by automating transactions and enhancing usability.
-  
 ### Technical Summary
 
 The **Eliza Framework** is a modular and extensible platform for building **autonomous AI agents**, integrating **LLMs** (Llama, Grok, OpenAI, Anthropic, Gemini) with a **RAG-based memory system** for persistent context. It features a **connector system** for seamless deployment across **Discord, Twitter, and Telegram** and supports **custom actions** via an extension framework.
