@@ -123,7 +123,7 @@ The **Eliza framework** is a modern, open-source platform designed to facilitate
 
 ---
 
-## **Technical Summary**
+## **Summary**
 
 The **Eliza Framework** is a **modular and extensible** platform for building **autonomous AI agents**, integrating **LLMs** (Llama, Grok, OpenAI, Anthropic, Gemini) with a **RAG-based memory system** for persistent context. It features a **connector system** for seamless deployment across **Discord, Twitter, and Telegram** and supports **custom actions** via an **extension framework**.
 
