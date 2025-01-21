@@ -1,6 +1,6 @@
 # 🤖 Move Bot day 01: Understanding Eliza framework
 
-> Modern autonomous AI agent development platform, inspired by the historic ELIZA chatbot.
+> Two of the most prominent tech AI and crypto have started merging. On the forefront of this are AI agents making it possible for crypto users to integrate AI agents onchain for various functionalities. Today we'll deep dive into one such framework called Eliza
 
 ## Understanding AI Systems
 
