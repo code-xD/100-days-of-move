@@ -36,18 +36,22 @@ Diffusion Models (e.g., Stable Diffusion for image generation)
 An AI agent is a software system that perceives its environment, processes information, and takes actions to achieve specific goals. AI agents can interact autonomously with users, data, or other systems and are often designed to learn and adapt over time.
 
 **Key Components of an AI Agent**
+
 Perception (Input Processing)
 
 AI agents observe their environment through sensors, APIs, or data feeds.
 Example: A chatbot reads user messages, or an autonomous car uses cameras and sensors.
+
 Reasoning (Decision Making)
 
 Uses machine learning models, rules, and logic to analyze the input and determine an appropriate response or action.
 Example: An AI customer support agent detects customer sentiment and provides relevant responses.
+
 Action Execution
 
 The agent performs an action based on its reasoning, such as sending a message, executing a function, or triggering an API call.
 Example: A trading bot executes a buy order based on market signals.
+
 Learning & Adaptation
 
 Uses feedback loops to improve over time, learning from past interactions through techniques like reinforcement learning or retrieval-augmented generation (RAG).
