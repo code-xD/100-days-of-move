@@ -104,7 +104,7 @@ The Eliza framework is a modern, open-source platform designed to facilitate the
 5. **Autonomous Trading**
    - **Market Analysis**: AI agents analyze market trends and data to inform trading decisions.
    - **Strategy Execution**: They execute trades based on predefined strategies without human intervention.
-   - **Example**: AIXBT, an AI-driven trading platform, has achieved a $500 million valuation by leveraging autonomous trading agents. 
+   - **Example**: AIXBT, an AI-driven trading bot, has achieved a $500 million valuation by leveraging market analysis and trends. 
 
 6. **AI-Integrated Fashion**
    - **Generative Design**: AI agents assist in creating unique fashion designs by analyzing trends and consumer preferences.
