@@ -108,7 +108,7 @@ The **Eliza framework** is a modern, open-source platform designed to facilitate
 
 ### **5. Autonomous Shitposting**
 - **Market Analysis**: AI agents analyze market trends to inform trading decisions on twitter.
-- *Example:* AIXBT, an AI-driven bot, reached a **$500M valuation** by leveraging AI-powered market analysis.
+- *Example:* AIXBT, reached a **$500M valuation** by leveraging AI-powered market analysis.
 
 ### **6. AI-Integrated Fashion**
 - **Generative Design**: AI agents create unique fashion designs by analyzing trends.
