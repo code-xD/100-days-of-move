@@ -10,27 +10,29 @@ An AI model is a mathematical representation of a system that processes data and
 
 **Types of AI Models**
 
-Machine Learning Models
+-Machine Learning Models
 
-Supervised Learning (Labeled data)
-Regression (e.g., Linear Regression, Decision Trees)
-Classification (e.g., Random Forest, SVM, Naïve Bayes)
-Unsupervised Learning (No labeled data)
-Clustering (e.g., K-Means, DBSCAN)
-Dimensionality Reduction (e.g., PCA, t-SNE)
-Reinforcement Learning (Learning through rewards)
-Q-Learning
-Deep Q Networks (DQN)
-Deep Learning Models
+ -Supervised Learning (Labeled data)
+   -Regression (e.g., Linear Regression, Decision Trees)
+   -Classification (e.g., Random Forest, SVM, Naïve Bayes)
+ -Unsupervised Learning (No labeled data)
+   -Clustering (e.g., K-Means, DBSCAN)
+   -Dimensionality Reduction (e.g., PCA, t-SNE)
+ -Reinforcement Learning (Learning through rewards)
+   -Q-Learning
+   -Deep Q Networks (DQN)
+  
+-Deep Learning Models
 
-Artificial Neural Networks (ANN)
-Convolutional Neural Networks (CNN) (Used for images)
-Recurrent Neural Networks (RNN) (Used for sequential data like text)
-Transformers (e.g., GPT, BERT, Llama)
-Generative AI Models
+ -Artificial Neural Networks (ANN)
+ -Convolutional Neural Networks (CNN) (Used for images)
+ -Recurrent Neural Networks (RNN) (Used for sequential data like text)
+ -Transformers (e.g., GPT, BERT, Llama)
 
-LLMs (Large Language Models) (e.g., ChatGPT, Claude, Gemini)
-Diffusion Models (e.g., Stable Diffusion for image generation)
+-Generative AI Models
+
+ -LLMs (Large Language Models) (e.g., ChatGPT, Claude, Gemini)
+ -Diffusion Models (e.g., Stable Diffusion for image generation)
 
 ### What is AI Agent?
 
