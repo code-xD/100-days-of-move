@@ -8,7 +8,7 @@
 
 An AI model is a mathematical representation of a system that processes data and makes predictions or decisions based on learned patterns. AI models are built using machine learning (ML) and deep learning (DL) techniques, trained on vast amounts of data to recognize trends, classify information, and generate outputs.
 
-Types of AI Models
+**Types of AI Models**
 Machine Learning Models
 
 Supervised Learning (Labeled data)
