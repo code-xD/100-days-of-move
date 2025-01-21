@@ -1,131 +1,137 @@
-# 🤖 Move Bot day 01: Understanding Eliza framework
+# 🤖 Move Bot Day 01: Understanding Eliza Framework
 
-> Two of the most prominent tech AI and crypto have started merging. On the forefront of this are AI agents making it possible for crypto users to integrate AI agents onchain for various functionalities. Today we'll deep dive into one such framework called Eliza
+> Two of the most prominent tech fields—AI and crypto—have started merging. At the forefront of this are AI agents, enabling crypto users to integrate AI agents on-chain for various functionalities. Today, we'll deep dive into one such framework called **Eliza**.
+
+---
 
 ## Understanding AI Systems
 
-### What is AI Model?
+### What is an AI Model?
 
-An AI model is a mathematical representation of a system that processes data and makes predictions or decisions based on learned patterns. AI models are built using machine learning (ML) and deep learning (DL) techniques, trained on vast amounts of data to recognize trends, classify information, and generate outputs.
+An AI model is a mathematical representation of a system that processes data and makes predictions or decisions based on learned patterns. AI models are built using **machine learning (ML)** and **deep learning (DL)** techniques, trained on vast amounts of data to recognize trends, classify information, and generate outputs.
 
-**Types of AI Models**
+#### **Types of AI Models**
 
--Machine Learning Models
+**1. Machine Learning Models**
+- **Supervised Learning (Labeled Data)**
+  - Regression (e.g., Linear Regression, Decision Trees)
+  - Classification (e.g., Random Forest, SVM, Naïve Bayes)
+- **Unsupervised Learning (No Labeled Data)**
+  - Clustering (e.g., K-Means, DBSCAN)
+  - Dimensionality Reduction (e.g., PCA, t-SNE)
+- **Reinforcement Learning (Learning Through Rewards)**
+  - Q-Learning
+  - Deep Q Networks (DQN)
 
- -Supervised Learning (Labeled data)
-   -Regression (e.g., Linear Regression, Decision Trees)
-   -Classification (e.g., Random Forest, SVM, Naïve Bayes)
- -Unsupervised Learning (No labeled data)
-   -Clustering (e.g., K-Means, DBSCAN)
-   -Dimensionality Reduction (e.g., PCA, t-SNE)
- -Reinforcement Learning (Learning through rewards)
-   -Q-Learning
-   -Deep Q Networks (DQN)
-  
--Deep Learning Models
+**2. Deep Learning Models**
+- Artificial Neural Networks (ANN)
+- Convolutional Neural Networks (CNN) (Used for images)
+- Recurrent Neural Networks (RNN) (Used for sequential data like text)
+- Transformers (e.g., GPT, BERT, Llama)
 
- -Artificial Neural Networks (ANN)
- -Convolutional Neural Networks (CNN) (Used for images)
- -Recurrent Neural Networks (RNN) (Used for sequential data like text)
- -Transformers (e.g., GPT, BERT, Llama)
+**3. Generative AI Models**
+- Large Language Models (LLMs) (e.g., ChatGPT, Claude, Gemini)
+- Diffusion Models (e.g., Stable Diffusion for image generation)
 
--Generative AI Models
+---
 
- -LLMs (Large Language Models) (e.g., ChatGPT, Claude, Gemini)
- -Diffusion Models (e.g., Stable Diffusion for image generation)
+### What is an AI Agent?
 
-### What is AI Agent?
+An AI agent is a **software system** that perceives its environment, processes information, and takes actions to achieve specific goals. AI agents can interact autonomously with users, data, or other systems and are often designed to learn and adapt over time.
 
-An AI agent is a software system that perceives its environment, processes information, and takes actions to achieve specific goals. AI agents can interact autonomously with users, data, or other systems and are often designed to learn and adapt over time.
+#### **Key Components of an AI Agent**
 
-**Key Components of an AI Agent**
+1. **Perception (Input Processing)**  
+   - AI agents observe their environment through sensors, APIs, or data feeds.
+   - *Example:* A chatbot reads user messages, or an autonomous car uses cameras and sensors.
 
-Perception (Input Processing)
+2. **Reasoning (Decision Making)**  
+   - Uses machine learning models, rules, and logic to analyze input and determine an appropriate response or action.
+   - *Example:* An AI customer support agent detects customer sentiment and provides relevant responses.
 
-AI agents observe their environment through sensors, APIs, or data feeds.
-Example: A chatbot reads user messages, or an autonomous car uses cameras and sensors.
+3. **Action Execution**  
+   - The agent performs an action based on its reasoning, such as sending a message, executing a function, or triggering an API call.
+   - *Example:* A trading bot executes a buy order based on market signals.
 
-Reasoning (Decision Making)
+4. **Learning & Adaptation**  
+   - Uses feedback loops to improve over time, learning from past interactions through techniques like reinforcement learning or retrieval-augmented generation (RAG).
+   - *Example:* A recommendation system improves its suggestions based on user behavior.
 
-Uses machine learning models, rules, and logic to analyze the input and determine an appropriate response or action.
-Example: An AI customer support agent detects customer sentiment and provides relevant responses.
-
-Action Execution
-
-The agent performs an action based on its reasoning, such as sending a message, executing a function, or triggering an API call.
-Example: A trading bot executes a buy order based on market signals.
-
-Learning & Adaptation
-
-Uses feedback loops to improve over time, learning from past interactions through techniques like reinforcement learning or retrieval-augmented generation (RAG).
-Example: A recommendation system improves its suggestions based on user behavior.
-
+---
 
 ### AI Models vs AI Agents
 
-| Feature | AI Models | AI Agents |
-|---------|-----------|-----------|
-| Nature | Passive word calculators | Active autonomous systems |
-| Operation | Waits for input to respond | Operates independently |
-| Context | Processes each input separately | Maintains conversation history |
+| Feature           | AI Models            | AI Agents            |
+|------------------|---------------------|----------------------|
+| Nature          | Passive word calculators | Active autonomous systems |
+| Operation       | Waits for input to respond | Operates independently |
+| Context         | Processes each input separately | Maintains conversation history |
 | Decision Making | Generates predictions based on input | Makes autonomous decisions |
-| Examples | GPT, Gemini | Eliza, Trading bots |
+| Examples        | GPT, Gemini | Eliza, Trading Bots |
 
-### Overview
-The Eliza framework is a modern, open-source platform designed to facilitate the development and deployment of autonomous AI agents. Inspired by the original ELIZA chatbot from the 1960s, this framework is tailored for contemporary applications, especially within the Web3 ecosystem.
+---
 
-### Key Features
+## **Overview of Eliza Framework**
+
+The **Eliza framework** is a modern, open-source platform designed to facilitate the development and deployment of **autonomous AI agents**. Inspired by the original **ELIZA chatbot** from the 1960s, this framework is tailored for contemporary applications, especially within the **Web3 ecosystem**.
+
+### **Key Features**
 - **Model Integration**: Plug-and-play support for Llama, Grok, OpenAI, Anthropic, and Gemini
-- **Connector System**: Multi-platform support (Discord, Twitter, Telegram) through unified API
+- **Connector System**: Multi-platform support (Discord, Twitter, Telegram) through a unified API
 - **Agent Management**: Deploy and orchestrate multiple agents with distinct personalities
 - **Document Processing**: Handle PDFs, audio, video, and images with built-in analysis
 - **Memory System**: RAG-based architecture for persistent context and history
 - **Extension Framework**: Custom actions and behavior modification capabilities
 
+---
 
-### Web3 Market Applications
+## **Web3 Market Applications**
 
-1. **Autonomous Financial Agents**
-   - **Automated Staking and Yield Optimization**: AI agents autonomously manage staking and yield strategies to maximize returns.
-   - **Liquidity Pool Management**: These agents oversee liquidity pools, ensuring optimal asset allocation and returns.
-   - **Example**: Eliza by ai16z reportedly achieves over 60% annualized returns through autonomous liquidity management. 
+### **1. Autonomous Financial Agents**
+- **Automated Staking & Yield Optimization**: AI agents autonomously manage staking and yield strategies to maximize returns.
+- **Liquidity Pool Management**: AI agents oversee liquidity pools, ensuring optimal asset allocation.
+- *Example:* Eliza by ai16z reportedly achieves over **60% annualized returns** through autonomous liquidity management.
 
-2. **Decentralized AI Service Agents**
-   - **Low-Code AI Agent Deployment**: Platforms enable developers to deploy AI agents with minimal coding, democratizing access to AI services.
-   - **Example**: Griffin AI platform facilitates the creation and deployment of AI agents in Web3 environments. 
+### **2. Decentralized AI Service Agents**
+- **Low-Code AI Agent Deployment**: Platforms enable developers to deploy AI agents with minimal coding.
+- *Example:* Griffin AI facilitates AI agent deployment in Web3 environments.
 
-3. **Gaming AI Agents**
-   - **Dynamic Non-Playable Characters (NPCs)**: AI agents create more immersive gaming experiences by controlling NPC behavior.
-   - **Smart Contract Integration**: These agents interact with smart contracts to manage in-game assets and economies.
-   - **Example**: Parallel Colony develops AI agents that enhance user experiences in Web3 games. 
+### **3. Gaming AI Agents**
+- **Dynamic NPCs**: AI agents create more immersive gaming experiences by controlling NPC behavior.
+- **Smart Contract Integration**: AI agents interact with smart contracts to manage in-game assets.
+- *Example:* Parallel Colony enhances Web3 gaming with AI agents.
 
-4. **Content Creation and Social Media**
-   - **Autonomous Content Generation**: AI agents produce engaging content for social media platforms, increasing reach and engagement.
-   - **Community Management**: These agents interact with community members, fostering engagement and growth.
-   - **Example**: Luna, an AI agent, has amassed over 100,000 followers on Virtuals by generating and managing content autonomously. 
+### **4. Content Creation & Social Media**
+- **Autonomous Content Generation**: AI agents produce engaging content for social media platforms.
+- **Community Management**: AI agents interact with community members to foster engagement.
+- *Example:* Luna, an AI agent, amassed over **40,000 followers** by autonomously managing content.
 
-5. **Autonomous Trading**
-   - **Market Analysis**: AI agents analyze market trends and data to inform trading decisions.
-   - **Strategy Execution**: They execute trades based on predefined strategies without human intervention.
-   - **Example**: AIXBT, an AI-driven trading bot, has achieved a $500 million valuation by leveraging market analysis and trends. 
+### **5. Autonomous Trading**
+- **Market Analysis**: AI agents analyze market trends to inform trading decisions.
+- **Strategy Execution**: They execute trades based on predefined strategies.
+- *Example:* AIXBT, an AI-driven bot, reached a **$500M valuation** by leveraging AI-powered market analysis.
 
-6. **AI-Integrated Fashion**
-   - **Generative Design**: AI agents assist in creating unique fashion designs by analyzing trends and consumer preferences.
-   - **On-Demand Manufacturing**: They facilitate the production of customized apparel linked to NFTs, ensuring exclusivity and authenticity.
-   - **Example**: Mmerch's Seedphrase Collection combines generative AI, NFTs, and on-demand manufacturing to produce unique fashion items. 
+### **6. AI-Integrated Fashion**
+- **Generative Design**: AI agents create unique fashion designs by analyzing trends.
+- **On-Demand Manufacturing**: They facilitate NFT-linked, customized apparel production.
+- *Example:* Mmerch’s **Seedphrase Collection** combines generative AI, NFTs, and fashion.
 
-7. **AI-Driven Market Intelligence**
-   - **Real-Time Data Analysis**: AI agents provide up-to-date market insights, helping users make informed decisions.
-   - **Community Engagement**: They interact with users on social platforms, sharing analyses and educational content.
-   - **Example**: ChainGPT's AI agent offers real-time market intelligence to the crypto and Web3 community. 
+### **7. AI-Driven Market Intelligence**
+- **Real-Time Data Analysis**: AI agents provide up-to-date market insights.
+- **Community Engagement**: They interact with users on social platforms, sharing analyses.
+- *Example:* ChainGPT's AI agent offers **real-time market intelligence** to the Web3 community.
 
-### Technical Summary
+---
 
-The **Eliza Framework** is a modular and extensible platform for building **autonomous AI agents**, integrating **LLMs** (Llama, Grok, OpenAI, Anthropic, Gemini) with a **RAG-based memory system** for persistent context. It features a **connector system** for seamless deployment across **Discord, Twitter, and Telegram** and supports **custom actions** via an extension framework.
+## **Technical Summary**
 
-Also designed for **Web3-native applications**, Eliza enables **AI-driven financial agents, decentralized services, trading bots, and smart contract interactions**. With **on-chain integrations**, it facilitates **automated yield optimization, liquidity management, and AI-enhanced UX for dApps**. Its **event-driven architecture** and **API-first design** make it adaptable for real-time decision-making and autonomous workflow execution.
+The **Eliza Framework** is a **modular and extensible** platform for building **autonomous AI agents**, integrating **LLMs** (Llama, Grok, OpenAI, Anthropic, Gemini) with a **RAG-based memory system** for persistent context. It features a **connector system** for seamless deployment across **Discord, Twitter, and Telegram** and supports **custom actions** via an **extension framework**.
 
-### Resources
+Designed for **Web3-native applications**, Eliza enables **AI-driven financial agents, decentralized services, trading bots, and smart contract interactions**. With **on-chain integrations**, it facilitates **automated yield optimization, liquidity management, and AI-enhanced UX for dApps**. Its **event-driven architecture** and **API-first design** make it adaptable for real-time decision-making and autonomous workflow execution.
+
+---
+
+## **Resources**
 
 - [Official Documentation](https://elizaos.github.io/eliza/)
 - [Research Paper](https://arxiv.org/pdf/2501.06781)
