@@ -90,7 +90,7 @@ The **Eliza framework** is a modern, open-source platform designed to facilitate
 ### **1. Autonomous Financial Agents**
 - **Automated Staking & Yield Optimization**: AI agents autonomously manage staking and yield strategies to maximize returns.
 - **Liquidity Pool Management**: AI agents oversee liquidity pools, ensuring optimal asset allocation.
-- *Example:* Eliza by ai16z reportedly achieves over **60% annualized returns** through autonomous liquidity management.
+- *Example:* Eliza by ai16z reportedly achieves over **25% annualized returns** through autonomous liquidity management.
 
 ### **2. Decentralized AI Service Agents**
 - **Low-Code AI Agent Deployment**: Platforms enable developers to deploy AI agents with minimal coding.
