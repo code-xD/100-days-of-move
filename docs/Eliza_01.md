@@ -106,9 +106,8 @@ The **Eliza framework** is a modern, open-source platform designed to facilitate
 - **Community Management**: AI agents interact with community members to foster engagement.
 - *Example:* Luna, an AI agent, amassed over **40,000 followers** by autonomously managing content.
 
-### **5. Autonomous Trading**
-- **Market Analysis**: AI agents analyze market trends to inform trading decisions.
-- **Strategy Execution**: They execute trades based on predefined strategies.
+### **5. Autonomous Shitposting**
+- **Market Analysis**: AI agents analyze market trends to inform trading decisions on twitter.
 - *Example:* AIXBT, an AI-driven bot, reached a **$500M valuation** by leveraging AI-powered market analysis.
 
 ### **6. AI-Integrated Fashion**
