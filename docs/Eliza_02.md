@@ -1,4 +1,4 @@
-# 🤖 Move Bot Day 02: Spin Up Eliza Framework
+# Move Bot Day 02: Spin Up Eliza Framework
 
 This guide will help you set up the Eliza framework. We'll walk through installing all prerequisites and then launching Eliza.
 
@@ -42,26 +42,6 @@ python3 --version
 
 ### 2. Installing Node.js
 
-#### macOS Installation
-
-Node.js can be installed using NVM (Node Version Manager):
-
-```bash
-# Install NVM
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
-
-# Configure shell (choose appropriate command)
-source ~/.bashrc    # For bash users
-source ~/.zshrc     # For zsh users
-
-# Install Node.js
-nvm install 23
-
-# Verify installation
-node -v
-npm -v
-```
-
 #### Linux Installation
 
 ```bash
@@ -79,12 +59,30 @@ node -v
 npm -v
 ```
 
+#### macOS Installation
+Node.js can be installed using NVM (Node Version Manager):
+
+```bash
+# Install NVM
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
+
+# Configure shell (choose appropriate command)
+source ~/.bashrc    # For bash users
+source ~/.zshrc     # For zsh users
+
+# Install Node.js
+nvm install 23
+
+# Verify installation
+node -v
+```
+
 ### 3. Installing PNPM
 
 PNPM is a performant package manager that saves disk space compared to npm.
 
 ```bash
-npm install pnpm
+npm install -g pnpm
 ```
 
 ## Setting Up Eliza
@@ -128,6 +126,22 @@ Once the agent is running:
 2. Navigate to the project directory
 3. Run `pnpm start:client`
 4. Follow the URL provided to chat with your agent
+
+## Demo
+
+Here's what you'll see after successfully running Eliza:
+
+### 1. Initial Startup and Model Loading
+![Initial Startup](./assets/image1.png)
+The REST API will be bound to localhost:3000, and you'll see the model initialization process using Llama local.
+
+### 2. First Interaction
+![First Interaction](./assets/image2.png)
+Eliza begins engaging with you, showing its interactive capabilities.
+
+### 3. Eliza's Personality
+![Eliza's Responses](./assets/image3.png)
+Eliza showcases its unique personality through witty responses:
 
 
 ## Additional Resources
