@@ -139,9 +139,7 @@ You can interact with Eliza on the terminal.
 ![First Interaction](./assets/image2.png)
 Eliza begins engaging with you, showing its interactive capabilities.
 
-### 3. Eliza's Personality
-![Eliza's Responses](./assets/image3.png)
-Eliza showcases its unique personality through witty responses:
+
 
 
 ## Additional Resources
