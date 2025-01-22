@@ -2,6 +2,10 @@
 
 This guide will help you set up the Eliza framework. We'll walk through installing all prerequisites and then launching Eliza.
 
+## Notes for Windows Users
+
+WSL2 is required for Windows installations. Please follow the [Microsoft WSL installation guide](https://learn.microsoft.com/en-us/windows/wsl/install-manual) before proceeding with the setup.
+
 ## Prerequisites
 
 * Python 2.7+
@@ -124,9 +128,6 @@ Once the agent is running:
 3. Run `pnpm start:client`
 4. Follow the URL provided to chat with your agent
 
-## Notes for Windows Users
-
-WSL2 is required for Windows installations. Please follow the [Microsoft WSL installation guide](https://learn.microsoft.com/en-us/windows/wsl/install-manual) before proceeding with the setup.
 
 ## Additional Resources
 
