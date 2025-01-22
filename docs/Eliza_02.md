@@ -1,4 +1,4 @@
-# Move Bot Day 02: Spin Up Eliza Framework
+# 🤖 Move Bot Day 02: Spin Up Eliza Framework
 
 This guide will help you set up the Eliza framework. We'll walk through installing all prerequisites and then launching Eliza.
 
