@@ -133,15 +133,13 @@ Here's what you'll see after successfully running Eliza:
 
 ### 1. Initial Startup and Model Loading
 ![Initial Startup](./assets/image1.png)
-The REST API will be bound to localhost:3000, and you'll see the model initialization process using Llama local.
+You can interact with Eliza on the terminal.
 
 ### 2. First Interaction
 ![First Interaction](./assets/image2.png)
 Eliza begins engaging with you, showing its interactive capabilities.
 
-### 3. Eliza's Personality
-![Eliza's Responses](./assets/image3.png)
-Eliza showcases its unique personality through witty responses:
+
 
 
 ## Additional Resources
