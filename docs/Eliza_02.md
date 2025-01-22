@@ -59,6 +59,7 @@ nvm install 23
 
 # Verify installation
 node -v
+npm -v
 ```
 
 #### Linux Installation
@@ -83,7 +84,7 @@ npm -v
 PNPM is a performant package manager that saves disk space compared to npm.
 
 ```bash
-npm install ppm
+npm install pnpm
 ```
 
 ## Setting Up Eliza
