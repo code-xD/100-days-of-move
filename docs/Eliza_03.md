@@ -88,6 +88,8 @@ pnpm build
 
 Edit the character configuration file `./characters/trump.character.json`:
 
+Character is a type which defines the configuration for an agent character.
+
 ```json
 {
     "name": "Trump",
