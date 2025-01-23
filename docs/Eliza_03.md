@@ -42,6 +42,20 @@ Before getting started, ensure you have the following:
    pnpm build
    ```
 
+Note: if error logs 
+```bash
+ERR_PNPM_LOCKFILE_CONFIG_MISMATCH  Cannot proceed with the frozen installation. The current "overrides" configuration doesn't match the value found in the lockfile
+
+Update your lockfile using "pnpm install --no-frozen-lockfile"
+```
+
+run 
+```bash
+pnpm install --no-frozen-lockfile
+pnpm build
+```
+
+
 ## Configuration
 
 ### API Keys
