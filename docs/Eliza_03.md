@@ -1,4 +1,4 @@
-# Move Bot Day 03: Deploying Trump character on telegram
+# 🤖 Move Bot Day 03: Deploying Trump character on telegram
 > Today we will be deploying trump character based AI agent on telegram. Join [this group](https://t.me/+HzTYUNYoQaM0YjQ1) to interact with the bot
 ## Table of Contents
 - [Prerequisites](#prerequisites)
