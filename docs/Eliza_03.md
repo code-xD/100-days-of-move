@@ -52,6 +52,7 @@ Update your lockfile using "pnpm install --no-frozen-lockfile"
 run 
 ```bash
 pnpm install --no-frozen-lockfile
+pnpm i
 pnpm build
 ```
 
