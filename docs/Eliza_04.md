@@ -47,7 +47,7 @@ The AI model source that powers the character's language generation capabilities
 - **Google**
 - **Llama** (Local and Cloud)
 
-### Model Configuration Parameters
+### Model Configuration Parameters Examples
 1. **Temperature**: Controls the creativity and randomness of responses
    - Range: 0.0 (deterministic) to 1.0 (most creative)
    - Low values (0.1-0.3): Focused, precise responses
@@ -58,11 +58,6 @@ The AI model source that powers the character's language generation capabilities
    - Prevents excessively long outputs
    - Helps manage computational resources
    - Typically ranges from 50 to 4096 tokens
-
-3. **Top P Sampling**: Alternative to temperature for controlling response diversity
-   - Uses cumulative probability to select tokens
-   - Provides more nuanced randomness control
-   - Typically set between 0.5 and 1.0
 
 ![Advance Configuration](./assets/ms.png)
 
