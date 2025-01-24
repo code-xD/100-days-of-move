@@ -144,6 +144,8 @@ In the Eliza framework, RAG works through a sophisticated process:
    - Injects retrieved information into the prompt
    - Allows model to generate more informed, contextually rich responses
 
+! [General flow](.assets/xxx.png)
+
 ---
 
 ## 9. Message Examples
@@ -196,5 +198,12 @@ A curated list of descriptive words that:
 The **Character Configuration Guide** offers an in-depth look at the various components that shape an AI agent’s interaction style, behavior, and capabilities. From defining basic properties such as the agent's **Name** and **Clients** to more advanced features like **Model Providers** and **Knowledge** management.
 
 In the **Model Provider** section, key parameters such as **Temperature**, **Max Tokens** ensure that responses are tailored to the desired creativity and computational efficiency. The addition of **Tokens** emphasizes the importance of managing response length and ensuring efficient text generation.
+
+## Reference
+https://community.openai.com/t/cheat-sheet-mastering-temperature-and-top-p-in-chatgpt-api/172683
+https://help.openai.com/en/articles/4936856-what-are-tokens-and-how-to-count-them
+https://aws.amazon.com/what-is/retrieval-augmented-generation/
+https://github.com/elizaOS/eliza
+
 
 
