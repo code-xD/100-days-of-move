@@ -1,4 +1,4 @@
-# Move Bot: Character Configuration Guide
+# Move Bot Day 04: Character Configuration Guide
 
 > Gmove! Today we will be discussing in depth about character configuration file, which is a separate entity but encapsulates the response behavior of the agent.
 
@@ -205,8 +205,8 @@ A curated list of descriptive words that:
 
 ## Summary
 
-The **Character Configuration Guide** offers an in-depth look at the various components that shape an AI agent’s interaction style, behavior, and capabilities. From defining basic properties such as the agent's **Name** and **Clients** to more advanced features like **Model Providers** and **Knowledge** management, this guide outlines all essential elements for creating and customizing a character.
+The **Character Configuration Guide** offers an in-depth look at the various components that shape an AI agent’s interaction style, behavior, and capabilities. From defining basic properties such as the agent's **Name** and **Clients** to more advanced features like **Model Providers** and **Knowledge** management.
 
 In the **Model Provider** section, key parameters such as **Temperature**, **Max Tokens**, and **Top P Sampling** ensure that responses are tailored to the desired creativity and computational efficiency. The addition of **Tokens** emphasizes the importance of managing response length and ensuring efficient text generation.
 
-The guide further elaborates on aspects like **Plugins**, **Bio**, **Lore**, and **Message Examples**, allowing for a fully fleshed-out AI character capable of engaging, contextually aware, and dynamically responsive interactions.
+
