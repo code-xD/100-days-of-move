@@ -29,3 +29,5 @@ This repo contains the code and the instructions to get started with Move Langua
 | Day 19 | Move Bot Day 01| [Eliza_01.md](docs/Eliza_01.md) |
 | Day 19 - 1 | Move Bot Day 02| [Eliza_02.md](docs/Eliza_02.md) |
 | Day 20 | Move Bot Day 03 | [Eliza 03.md](docs/Eliza_03.md) |
+| Day 21 | Move Bot Day 04 | [Eliza 04.md](docs/Eliza_03.md) |
+
