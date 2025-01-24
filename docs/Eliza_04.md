@@ -195,6 +195,6 @@ A curated list of descriptive words that:
 
 The **Character Configuration Guide** offers an in-depth look at the various components that shape an AI agent’s interaction style, behavior, and capabilities. From defining basic properties such as the agent's **Name** and **Clients** to more advanced features like **Model Providers** and **Knowledge** management.
 
-In the **Model Provider** section, key parameters such as **Temperature**, **Max Tokens**, and **Top P Sampling** ensure that responses are tailored to the desired creativity and computational efficiency. The addition of **Tokens** emphasizes the importance of managing response length and ensuring efficient text generation.
+In the **Model Provider** section, key parameters such as **Temperature**, **Max Tokens** ensure that responses are tailored to the desired creativity and computational efficiency. The addition of **Tokens** emphasizes the importance of managing response length and ensuring efficient text generation.
 
 
