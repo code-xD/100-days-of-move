@@ -1,6 +1,6 @@
 # 🤖 Move Bot Day 04: Character Configuration Guide
 
-> Yesterday we learnt how to run eliza using custom character. [Click here](./Eliza03.md)
+> Yesterday we learnt how to run eliza using custom character on telegram. [Click here](./Eliza03.md)
 > Today we will be discussing in depth about character configuration file, which is a separate entity but encapsulates the response behavior of the agent.
 
 ## Table of Contents
