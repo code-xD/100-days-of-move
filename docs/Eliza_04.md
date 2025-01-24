@@ -1,4 +1,4 @@
-# Move Bot Day 04: Character Configuration Guide
+# 🤖 Move Bot Day 04: Character Configuration Guide
 
 > Gmove! Today we will be discussing in depth about character configuration file, which is a separate entity but encapsulates the response behavior of the agent.
 
