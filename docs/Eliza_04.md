@@ -59,8 +59,6 @@ The AI model source that powers the character's language generation capabilities
    - Helps manage computational resources
    - Typically ranges from 50 to 4096 tokens
 
-   > Tokens represent chunks of text that the model processes and generates. Typically, one token is roughly equivalent to a word or a part of a word in English. For example, the sentence "Hello, world!" is encoded into several tokens. Understanding token limits helps ensure responses are concise and computationally efficient.
-
 3. **Top P Sampling**: Alternative to temperature for controlling response diversity
    - Uses cumulative probability to select tokens
    - Provides more nuanced randomness control
