@@ -144,7 +144,7 @@ In the Eliza framework, RAG works through a sophisticated process:
    - Injects retrieved information into the prompt
    - Allows model to generate more informed, contextually rich responses
 
-! [General flow](.assets/xxx.png)
+! [General flow](.assets/3x.png)
 
 ---
 
