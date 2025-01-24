@@ -151,11 +151,6 @@ In the Eliza framework, RAG works through a sophisticated process:
    - Injects retrieved information into the prompt
    - Allows model to generate more informed, contextually rich responses
 
-4. **Dynamic Knowledge Integration**
-   - Supports multiple knowledge sources
-   - Enables real-time knowledge updates
-   - Provides flexible information management
-
 ---
 
 ## 9. Message Examples
