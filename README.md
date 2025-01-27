@@ -28,6 +28,7 @@ This repo contains the code and the instructions to get started with Move Langua
 | Day 16 | Fungible Assets: Creation, Control and Supply| [FungibleAssetsII.md](docs/FungibleAssetsII.md) | [fa-minter](demos/fa-minter/)
 | Day 19 | Move Bot Day 01| [Eliza_01.md](docs/Eliza_01.md) |
 | Day 19 - 1 | Move Bot Day 02| [Eliza_02.md](docs/Eliza_02.md) |
-| Day 20 | Move Bot Day 03 | [Eliza 03.md](docs/Eliza_03.md) |
-| Day 21 | Move Bot Day 04 | [Eliza 04.md](docs/Eliza_03.md) |
+| Day 20 | Move Bot Day 03 | [Eliza_03.md](docs/Eliza_03.md) |
+| Day 21 | Move Bot Day 04 | [Eliza_04.md](docs/Eliza_03.md) |
+| Day 23 | Move Bot Day 05 | [MoveBot_01.md](docs/MoveBot_01.md) |
 
