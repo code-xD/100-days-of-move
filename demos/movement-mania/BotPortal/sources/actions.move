@@ -45,8 +45,10 @@ module BotPortal::actions {
             return ()
         };
 
-        let resource_signer_cap =
+        let resource_signer_cap = 
             resource_account::retrieve_resource_account_cap(resource_account, admin_addr);
+        coin::register<aptos_coin::AptosCoin>(resource_account);
+
         move_to(
             resource_account,
             Admin { signer_cap: resource_signer_cap, admin_addr: admin_addr }
@@ -96,7 +98,7 @@ module BotPortal::actions {
         account::create_signer_with_capability(&admin_object.signer_cap)
     }
 
-    public fun reply_to_tweet(sender: &signer, tweet_link: String) acquires TweetReplyCost, Admin {
+    entry public fun reply_to_tweet(sender: &signer, tweet_link: String) acquires TweetReplyCost, Admin {
         let resource_account = &get_signer_internal();
         let resource_account_address = signer::address_of(resource_account);
         let amount = get_tweet_reply_cost().reply_cost_in_apt;
