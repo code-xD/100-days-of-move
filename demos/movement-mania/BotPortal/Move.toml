@@ -1,0 +1,20 @@
+[package]
+name = "BotPortal"
+version = "1.0.0"
+authors = []
+
+[addresses]
+publisher = "_"
+BotPortal = "_"
+aptos_framework = "0x1"
+
+[dev-addresses]
+publisher = "0x0a6f65c5389cb25206b0778b0411728663f1533da8a51f36d5b14db16b18dbc4"
+BotPortal = "0xb00b2aef1ffae7256e4fdc345903a6102e7107d9b1ed96a451ad6c110347ce78"
+
+[dependencies.AptosFramework]
+git = "https://github.com/movementlabsxyz/aptos-core.git"
+rev = "movement"
+subdir = "aptos-move/framework/aptos-framework"
+
+[dev-dependencies]
