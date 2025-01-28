@@ -11,4 +11,4 @@ movement move create-resource-account-and-publish-package --seed <seed_phrase> -
 
 | Network | Seed Phrase | Module Address |
 | ------- | ----------- | -------------- |
-| Bardock | mania-v0.0.1 | 0xaa3aca2ff971ab329b2857a06dc1d28650ef0af6da872ee8b7cb64198568d5a3?|
+| Bardock | mania-v0.0.1 | 0xaa3aca2ff971ab329b2857a06dc1d28650ef0af6da872ee8b7cb64198568d5a3|
