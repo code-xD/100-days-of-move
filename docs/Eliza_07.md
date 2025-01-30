@@ -1,4 +1,4 @@
-# 🤖 ElizaOS Framework - Deep Dive into Plugins
+# ElizaOS Framework - Deep Dive into Plugins
 
 ## Introduction
 ElizaOS is a modular AI framework designed to create, deploy, and manage autonomous AI agents. The framework is built around the concepts of Agents, Providers, and Actions, each serving a specific role in augmenting agent capabilities. This document provides an in-depth exploration of these components and how they work together within the ElizaOS ecosystem.
@@ -10,9 +10,11 @@ ElizaOS is a modular AI framework designed to create, deploy, and manage autonom
    - Example: Time Context Provider  
 4. Understanding Actions  
    - Example: Automated Twitter Reply Action  
-5. General Examples  
-6. Bringing it All Together  
-7. Conclusion  
+5. Building a Plugin with ElizaOS  
+   - Example: Blockchain-based Twitter Reply Listener  
+6. General Examples  
+7. Bringing it All Together  
+8. Conclusion  
 
 ## Overview of Core Components
 ElizaOS's architecture is centered around three primary components:
@@ -23,57 +25,64 @@ ElizaOS's architecture is centered around three primary components:
 
 Each component enhances the agent’s ability to process data, make decisions, and execute tasks efficiently.
 
-## Understanding Agents
-Agents are the core components of the ElizaOS framework that handle autonomous interactions. Each agent operates within a runtime environment and can interact through various clients (e.g., Discord, Telegram) while maintaining consistent behavior and memory.
+## Building a Plugin with ElizaOS
+ElizaOS provides a flexible plugin system that enables developers to extend its capabilities. A plugin typically consists of a **Service** that listens for external triggers and an **Action** that defines how the agent responds. Below, we demonstrate how to build a blockchain-integrated Twitter reply listener using ElizaOS.
 
-### Key Responsibilities:
-- **Message and Memory Processing**: Storing, retrieving, and managing conversation data and contextual memory.
-- **State Management**: Composing and updating the agent’s state for coherent, ongoing interactions.
-- **Action Execution**: Handling behaviors such as transcribing media, generating images, and following rooms.
-- **Evaluation and Response**: Assessing responses, managing goals, and extracting relevant information.
+### Example: Blockchain-based Twitter Reply Listener
+This example showcases how an ElizaOS agent can monitor blockchain events and automatically respond to tweets based on specific triggers.
 
-For a comprehensive overview, refer to the **Agents documentation**.
+#### 1. Blockchain Event Listener Service
+This service continuously monitors blockchain events and triggers an action when relevant data is detected.
 
-## Understanding Providers
-Providers are core modules that inject dynamic context and real-time information into agent interactions. They serve as bridges between the agent and various external systems, enabling access to data such as market information, wallet details, sentiment analysis, and temporal context.
-
-### Example: Time Context Provider
-This provider returns the current date and time when requested.
-
-#### Implementation:
 ```typescript
-import { Provider } from "@elizaos/core";
+import { IAgentRuntime, Service, ServiceType, elizaLogger } from "@elizaos/core";
+import { fetchBlocksWithEvents, BlockFetcherConfig, TweetReplyEvent } from './block-fetcher';
 
-export const timeProvider: Provider = {
-    get: async (_runtime, _message) => {
-        const currentDate = new Date();
-        const currentTime = currentDate.toLocaleTimeString("en-US");
-        const currentYear = currentDate.getFullYear();
-        return `The current time is: ${currentTime}, ${currentYear}`;
-    },
+let lastProcessedHeight = 7620233; // Starting block height
+const POLLING_INTERVAL = 5000; // 5 seconds
+
+export const tweetReplyListener: Service = {
+    serviceType: ServiceType.BROWSER,
+    initialize: async (runtime: IAgentRuntime) => {
+        while (true) {
+            try {
+                const events = await fetchBlocksWithEvents(lastProcessedHeight);
+                for (const event of events) {
+                    if (event.status === "PENDING") {
+                        await runtime.processActions(event, [event]);
+                    }
+                }
+                lastProcessedHeight += 100;
+                await new Promise(resolve => setTimeout(resolve, POLLING_INTERVAL));
+            } catch (error) {
+                elizaLogger.error('Error in event polling loop:', { error: error.message });
+            }
+        }
+    }
 };
 ```
 
-For more details, see the **Providers documentation**.
+#### 2. Action for Replying to Tweets
+Once the event listener detects a new blockchain event, it triggers this action to reply to a tweet automatically.
 
-## Understanding Actions
-Actions are core building blocks in ElizaOS that define how agents respond to and interact with messages. They allow agents to interact with external systems, modify their behavior, and perform tasks beyond simple message responses.
-
-### Example: Automated Twitter Reply Action
-This action generates a reply to a tweet when triggered by a corresponding service.
-
-#### Implementation:
 ```typescript
-import { Action } from "@elizaos/core";
+import { Action, IAgentRuntime, Memory, elizaLogger } from "@elizaos/core";
 import { Scraper } from "agent-twitter-client";
 
-export const tweetReplyAction: Action = {
+export const replyAction: Action = {
     name: "TWEET_REPLY",
-    handler: async (runtime, message) => {
-        const scraper = new Scraper();
-        const replyText = `Hey @${message.content.user}, thanks for your tweet!`;
-        await scraper.replyToTweet(message.content.tweet_link, replyText);
-    },
+    handler: async (runtime: IAgentRuntime, message: Memory) => {
+        try {
+            const { tweet_link, user } = message.content;
+            const scraper = new Scraper();
+            await scraper.login(runtime.getSetting("TWITTER_USERNAME"), runtime.getSetting("TWITTER_PASSWORD"));
+            await scraper.sendTweet(`Thanks @${user} for your request!`, tweet_link);
+            return true;
+        } catch (error) {
+            elizaLogger.error("Error in reply action:", error);
+            return false;
+        }
+    }
 };
 ```
 
@@ -81,8 +90,6 @@ export const tweetReplyAction: Action = {
 - **Send Email Action**: Sends an automated email when a user submits a form.
 - **Data Logging Action**: Stores conversation history in a database for later analysis.
 - **Notification Action**: Sends a push notification to a user when an important event occurs.
-- **Content Moderation Action**: Automatically removes or flags inappropriate content in chat messages.
-- **Task Assignment Action**: Assigns tasks to different team members based on incoming requests.
 
 For a deeper understanding, consult the **Actions documentation**.
 
@@ -92,21 +99,18 @@ In a fully integrated ElizaOS agent, these components interact as follows:
 1. **The Agent** manages autonomous interactions and maintains state and memory.
 2. **Providers** supply dynamic contextual information to the agent, enriching interactions with real-time data.
 3. **Actions** define the tasks and responses that the agent performs based on provided inputs.
+4. **Plugins** extend the agent's functionality, allowing it to interact with new systems such as blockchains and social media platforms.
 
 This modular structure ensures scalability, maintainability, and flexibility in AI agent development.
 
 ## Conclusion
-ElizaOS enables developers to build intelligent, context-aware AI agents using **Agents, Providers, and Actions**. By modularizing functionalities, agents can seamlessly integrate with various platforms and services while maintaining extensibility for future enhancements.
+ElizaOS enables developers to build intelligent, context-aware AI agents that interact with users based on blockchain events. This allows seamless automation of onchain interactions and AI-driven workflows. 
 
 This guide covered:
 - How **Agents** manage autonomous interactions.
 - How **Providers** inject contextual data into the agent.
 - How **Actions** define behavioral responses.
+- How **Plugins** can be used to enhance AI agents with new capabilities such as blockchain event monitoring and Twitter automation.
 
 With these building blocks, you can create highly interactive AI agents that automate workflows efficiently.
-
-For more detailed information, please refer to the official ElizaOS documentation:
-- **[Agents Documentation]**
-- **[Providers Documentation]**
-- **[Actions Documentation]**
 
