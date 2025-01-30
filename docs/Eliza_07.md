@@ -1,4 +1,4 @@
-# ElizaOS Framework - Deep Dive into Plugins
+# 🤖 ElizaOS Framework - Deep Dive into Plugins
 
 ## Introduction
 ElizaOS is a modular AI framework designed to create, deploy, and manage autonomous AI agents. The framework is built around the concepts of Agents, Providers, and Actions, each serving a specific role in augmenting agent capabilities. This document provides an in-depth exploration of these components and how they work together within the ElizaOS ecosystem.
