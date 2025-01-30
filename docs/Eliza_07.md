@@ -88,7 +88,7 @@ export const replyAction: Action = {
 };
 ```
 
-For a deeper understanding, consult the **Actions documentation**.
+For a deeper understanding, consult the **[documentation](https://elizaos.github.io/eliza/docs/intro/)**.
 
 ## Conclusion
 In a fully integrated ElizaOS agent, these components interact as follows:
