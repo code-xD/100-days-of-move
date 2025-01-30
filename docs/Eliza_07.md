@@ -31,6 +31,8 @@ ElizaOS provides a flexible plugin system that enables developers to extend its 
 ### Example: Blockchain-based Twitter Reply Listener
 This example showcases how an ElizaOS agent can monitor blockchain events and automatically respond to tweets based on specific triggers.
 
+[](./assets/day25.png)
+
 #### 1. Blockchain Event Listener Service
 This service continuously monitors blockchain events and triggers an action when relevant data is detected.
 
@@ -85,11 +87,6 @@ export const replyAction: Action = {
     }
 };
 ```
-
-## General Examples
-- **Send Email Action**: Sends an automated email when a user submits a form.
-- **Data Logging Action**: Stores conversation history in a database for later analysis.
-- **Notification Action**: Sends a push notification to a user when an important event occurs.
 
 For a deeper understanding, consult the **Actions documentation**.
 
