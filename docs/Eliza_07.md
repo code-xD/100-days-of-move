@@ -90,24 +90,13 @@ export const replyAction: Action = {
 
 For a deeper understanding, consult the **Actions documentation**.
 
-## Bringing it All Together
+## Conclusion
 In a fully integrated ElizaOS agent, these components interact as follows:
 
 1. **The Agent** manages autonomous interactions and maintains state and memory.
 2. **Providers** supply dynamic contextual information to the agent, enriching interactions with real-time data.
 3. **Actions** define the tasks and responses that the agent performs based on provided inputs.
 4. **Plugins** extend the agent's functionality, allowing it to interact with new systems such as blockchains and social media platforms.
-
-This modular structure ensures scalability, maintainability, and flexibility in AI agent development.
-
-## Conclusion
-ElizaOS enables developers to build intelligent, context-aware AI agents that interact with users based on blockchain events. This allows seamless automation of onchain interactions and AI-driven workflows. 
-
-This guide covered:
-- How **Agents** manage autonomous interactions.
-- How **Providers** inject contextual data into the agent.
-- How **Actions** define behavioral responses.
-- How **Plugins** can be used to enhance AI agents with new capabilities such as blockchain event monitoring and Twitter automation.
 
 With these building blocks, you can create highly interactive AI agents that automate workflows efficiently.
 
