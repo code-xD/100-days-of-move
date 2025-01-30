@@ -32,5 +32,5 @@ This repo contains the code and the instructions to get started with Move Langua
 | Day 21 | Move Bot Day 04 | [Eliza_04.md](docs/Eliza_03.md) |
 | Day 23 | Move Bot Day 05 | [MoveBot_01.md](docs/MoveBot_01.md) |
 | Day 24 | Move Bot Day 06 | [MoveBot_02.md](docs/MoveBot_02.md) | [movement-mania](demos/movement-mania/)
-| Day 25 | Move Bot Day 07 | [MoveBot_07.md](docs/MoveBot_07.md)
+| Day 25 | Move Bot Day 07 | [MoveBot_07.md](docs/Eliza_07.md)
 
