@@ -31,7 +31,7 @@ ElizaOS provides a flexible plugin system that enables developers to extend its 
 ### Example: Blockchain-based Twitter Reply Listener
 This example showcases how an ElizaOS agent can monitor blockchain events and automatically respond to tweets based on specific triggers.
 
-[](./assets/day25.png)
+[Basic workflow of the Tweet Reply Listener](./assets/day25.png)
 
 #### 1. Blockchain Event Listener Service
 This service continuously monitors blockchain events and triggers an action when relevant data is detected.
