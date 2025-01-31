@@ -13,7 +13,6 @@ ElizaOS is a modular AI framework designed to create, deploy, and manage autonom
 5. Building a Plugin with ElizaOS  
    - Example: Blockchain-based Twitter Reply Listener  
 6. General Examples  
-7. Bringing it All Together  
 8. Conclusion  
 
 ## Overview of Core Components
